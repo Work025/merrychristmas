@@ -1,0 +1,124 @@
+.section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.section-text {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-text h2 {
+    width: 450px;
+    height: 68px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+
+.section-text hr {
+    width: 80px;
+    height: 2px;
+    border: 2px solid #000000;
+}
+
+.section-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 100px;
+    justify-content: space-evenly;
+}
+
+.card-stn {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-stn img {
+    width: 100%;
+    height: auto;
+}
+
+.card-stn h3 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+
+.card-stn p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #939393;
+}
+
+@media (max-width: 770px) {
+    .section-text {
+        height: auto;
+        padding: 20px;
+    }
+
+    .section-text h2 {
+        width: 100%;
+        font-size: 24px;
+        height: auto;
+    }
+
+    .section-card {
+        padding: 20px;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .card-stn {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .card-stn img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* KICHIK TELEFONLAR (480px) */
+@media (max-width: 480px) {
+    .section-text h2 {
+        font-size: 20px;
+    }
+
+    .card-stn h3 {
+        font-size: 16px;
+    }
+
+    .card-stn p {
+        font-size: 14px;
+    }
+}
