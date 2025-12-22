@@ -57,7 +57,7 @@
 }
 
 .main-text button {
-    width: 202px;
+    width: 250px;
     height: 58px;
     display: flex;
     align-items: center;
@@ -73,6 +73,24 @@
     color: #FFFFFF;
     border: none;
     margin-top: 30px;
+}
+
+/* Dark rejimda background rasmni olib tashlash */
+.main.dark {
+    background-image: none;
+    background-color: #111;
+    /* ixtiyoriy, fon rangini o‘zgartirish uchun */
+}
+
+.main.dark .main-text span,
+.main.dark .main-text h4,
+.main.dark .main-text p {
+    color: #fff;
+}
+
+.main.dark .main-text button {
+    background: #fff;
+    color: #000;
 }
 
 @media (max-width: 770px) {

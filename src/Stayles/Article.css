@@ -1,6 +1,6 @@
 .article {
     width: 100%;
-    height: 250px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,6 +49,30 @@
     transform: translateY(-2px);
 }
 
+/* DARK MODE */
+.article.dark {
+    background: #000;
+}
+
+.article.dark .article-text h2,
+.article.dark .article-text p {
+    color: #fff;
+}
+
+.article.dark .article-text p {
+    color: #ccc;
+}
+
+.article.dark .article-text button {
+    background: #fff;
+    color: #000;
+}
+
+.article.dark .article-text button:hover {
+    background: #eee;
+}
+
+/* RESPONSIVE */
 @media (max-width: 770px) {
     .article {
         height: auto;

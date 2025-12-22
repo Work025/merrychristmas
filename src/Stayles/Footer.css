@@ -51,7 +51,7 @@
     font-size: 20px;
 }
 
-p {
+.footer p {
     width: 70%;
     font-style: normal;
     font-weight: 400;
@@ -61,7 +61,7 @@ p {
     color: #616161;
 }
 
-a {
+.footer a {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -70,6 +70,31 @@ a {
     color: #616161;
 }
 
+/* DARK MODE */
+.footer.dark {
+    background: #000;
+    /* fon rasmni olib tashlash va qora rang berish */
+}
+
+.footer.dark hr {
+    border-color: #444;
+}
+
+.footer.dark .footer-i i {
+    border-color: #aaa;
+    color: #aaa;
+}
+
+.footer.dark .footer-links h2 {
+    color: #fff;
+}
+
+.footer.dark p,
+.footer.dark a {
+    color: #ccc;
+}
+
+/* RESPONSIVE */
 @media (max-width: 770px) {
     .footer {
         height: 500px;
@@ -112,7 +137,6 @@ a {
     }
 }
 
-/* KICHIK TELEFONLAR (480px) */
 @media (max-width: 480px) {
     .footer {
         padding: 30px 15px 15px;

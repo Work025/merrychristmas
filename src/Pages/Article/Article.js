@@ -1,18 +1,18 @@
-import '../..//Stayles/Article.css';
+import '../../Stayles/Article.css';
+import languageData from '../../Data/Language.json';
 
-function Article() {
+function Article({ dark, lang }) {
+    const currentLang = languageData.find(l => l.code === lang) || languageData[0];
+
     return (
-        <div className="article">
+        <div className={dark ? "article dark" : "article"}>
             <div className="article-text">
-                <h2>Enjoy 40% Off Order</h2>
-                <p>
-                    From its medieval origins to the digital everythingthere is to know about the ubiquitous
-                </p>
-                <button>Shop Now</button>
-
+                <h2>{currentLang.main.top}</h2>
+                <p>{currentLang.main.code}</p>
+                <button>{currentLang.main.btn}</button>
             </div>
-
         </div>
     );
 }
+
 export default Article;

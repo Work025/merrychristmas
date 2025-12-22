@@ -1,77 +1,198 @@
 .header {
     width: 100%;
     height: 70px;
+    padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
-}
-
-.header-logo {
-    width: 30%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .header-logo img {
-    width: 30%;
-    height: 90%;
+    width: 120px;
 }
 
-/* MENU */
 .header-ul {
     display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
+    gap: 25px;
+    list-style: none;
 }
 
 .header-ul li a {
     text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.header-menu i {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* VIEW CARD PANEL */
+.view-card {
+    position: fixed;
+    top: 0;
+    right: -380px;
+    width: 360px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+    transition: right 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    padding: 15px;
+}
+
+.view-card.show {
+    right: 0;
+}
+
+/* CART HEADER */
+.cart-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cart-head h2 {
     font-size: 20px;
     font-weight: 700;
-    color: #000;
+}
+
+.cart-controls i {
+    margin-left: 10px;
     cursor: pointer;
-    transition: color 0.3s ease;
+    font-size: 18px;
 }
 
-.header-ul li a:hover {
-    color: #777;
+/* CART BODY */
+.header-cards {
+    flex: 1;
+    overflow-y: auto;
 }
 
-@media(max-width:770px) {
-    .header {
-        height: 186px;
-        align-items: center;
-        padding: 0;
-        flex-direction: column;
-        justify-content: space-around;
-    }
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
 
-    .header-logo {
+.cart-item p {
+    flex: 1;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.cart-item .qty {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cart-item .qty button {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.cart-item .remove {
+    cursor: pointer;
+    color: #999;
+}
+
+.cart-item .remove:hover {
+    color: red;
+}
+
+/* LANGUAGE BUTTONS */
+.lang {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.lang button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.lang button:hover {
+    background: #f0f0f0;
+}
+
+.lang button.active {
+    font-weight: 700;
+    border-color: #333;
+}
+
+/* DARK MODE */
+.header.dark {
+    background: #111;
+}
+
+.header.dark .header-ul li a {
+    color: #fff;
+}
+
+.header.dark .header-menu i {
+    color: #fff;
+}
+
+.header.dark .view-card {
+    background: #1a1a1a;
+    color: #fff;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.header.dark .cart-item p {
+    color: #eee;
+}
+
+.header.dark .cart-item .qty button {
+    background: #333;
+    border-color: #555;
+    color: #fff;
+}
+
+.header.dark .cart-item .remove {
+    color: #ccc;
+}
+
+.header.dark .cart-item .remove:hover {
+    color: red;
+}
+
+.header.dark .lang button {
+    border-color: #555;
+    color: #fff;
+    color: #000;
+}
+
+.header.dark .lang button:hover {
+    background: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 770px) {
+    .view-card {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header-ul {
-        width: 80%;
-        height: 56px;
-        justify-content: space-between;
-        border-top: 3px solid #888;
-    }
-}
-
-@media (max-width: 480px) {
-    .header-ul {
-        gap: 5px;
-        align-items: center;
-    }
-
-    .header-ul li a {
-        font-size: 16px;
     }
 }

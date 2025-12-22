@@ -1,17 +1,23 @@
-import "../../Stayles/Main.css"
+import languageData from "../../Data/Language.json";
+import "../../Stayles/Main.css";
 
-function Main() {
+function Main({ dark, lang }) {
+    const currentLang =
+        languageData.find(l => l.code === lang) || languageData[1];
+
+    const main = currentLang.main;
+
     return (
-        <div className="main">
+        <div className={`main ${dark ? "dark" : ""}`}>
             <div className="main-text">
-                <span>Year Biggest</span>
-                <h2>SALE</h2>
-                <h4>UPTO 30% OFF</h4>
-                <p>WITH CODE : SALE30</p>
-                <button>Shop Now</button>
+                <span>{main.top}</span>
+                <h2>{main.sale}</h2>
+                <h4>{main.off}</h4>
+                <p>{main.code}</p>
+                <button>{main.btn}</button>
             </div>
         </div>
-    )
+    );
 }
 
 export default Main;

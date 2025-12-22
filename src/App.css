@@ -6,3 +6,17 @@
   box-sizing: border-box;
   font-family: 'Mulish', sans-serif;
 }
+
+body {
+  background-color: #fff;
+  /* Default light */
+  transition: background-color 0.3s ease;
+}
+
+/* Dark mode uchun */
+body.dark-mode {
+  background-color: #000;
+  /* juda qorong'i, lekin qora emas */
+  color: #f1f1f1;
+  /* matnni oq rang qilish uchun */
+}

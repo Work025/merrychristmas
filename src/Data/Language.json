@@ -1,0 +1,92 @@
+[
+    {
+        "code": "UZ",
+        "label": "Uzbek",
+        "links": [
+            "Erkaklar",
+            "Ayollar",
+            "Oyoq kiyim",
+            "Sumkalar",
+            "Yangi",
+            "Chegirma"
+        ],
+        "cartTitle": "Sizning savatingiz",
+        "main": {
+            "top": "Yilning eng katta",
+            "sale": "CHEGIRMA",
+            "off": "30% GACHA",
+            "code": "KOD BILAN : SALE30",
+            "btn": "Hozir xarid qiling"
+        },
+        "footer": {
+            "links": [
+                "Mening hisobotim",
+                "Sizning xizmatingiz",
+                "Karyeralar",
+                "Maxfiylik siyosati"
+            ],
+            "unsubscribe": "Obunani bekor qilish",
+            "footerText": "©2023 Christmas, Inc. Brend nomlari, shiorlar, logotiplar va boshqa savdo belgilar FridaySale kompaniyasiga tegishli."
+        }
+    },
+    {
+        "code": "EN",
+        "label": "English",
+        "links": [
+            "Men",
+            "Women",
+            "Shoes",
+            "Bags",
+            "New",
+            "Sale"
+        ],
+        "cartTitle": "Your Cart",
+        "main": {
+            "top": "Year Biggest",
+            "sale": "SALE",
+            "off": "UP TO 30% OFF",
+            "code": "WITH CODE : SALE30",
+            "btn": "Shop Now"
+        },
+        "footer": {
+            "links": [
+                "My Account",
+                "Your Service",
+                "Careers",
+                "Privacy Policy"
+            ],
+            "unsubscribe": "Unsubscribe",
+            "footerText": "©2023 Christmas, Inc. The brand names, slogans, logos, other trademarks of FridaySale's goods, promotions belong exclusively to FridaySale Inc."
+        }
+    },
+    {
+        "code": "RU",
+        "label": "Русский",
+        "links": [
+            "Мужчины",
+            "Женщины",
+            "Обувь",
+            "Сумки",
+            "Новое",
+            "Распродажа"
+        ],
+        "cartTitle": "Ваша корзина",
+        "main": {
+            "top": "Самая большая",
+            "sale": "РАСПРОДАЖА",
+            "off": "СКИДКА ДО 30%",
+            "code": "ПО КОДУ : SALE30",
+            "btn": "Купить сейчас"
+        },
+        "footer": {
+            "links": [
+                "Мой аккаунт",
+                "Ваш сервис",
+                "Карьера",
+                "Политика конфиденциальности"
+            ],
+            "unsubscribe": "Отписаться",
+            "footerText": "©2023 Christmas, Inc. Названия брендов, слоганы, логотипы и другие торговые марки товаров FridaySale принадлежат исключительно FridaySale Inc."
+        }
+    }
+]
